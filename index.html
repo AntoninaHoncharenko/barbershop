@@ -7,49 +7,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Barbershop</title>
   </head>
   <body>
+    <!-- Heder -->
     <header class="header">
       <nav class="header-nav">
-        <a href="header-logo"> <img src="./img/logo.jpg" alt="логотип" /></a>
-        <ul class="header-list">
-          <li class="header-item"><a href="">Про нас</a></li>
-          <li class="header-item"><a href="">Послуги і ціни</a></li>
-          <li class="header-item"><a href="">Майстри</a></li>
-          <li class="header-item"><a href="">Контакти</a></li>
+        <a href="header-logo link"> <img src="./img/logo.jpg" alt="логотип" /></a>
+        <ul class="nav-list list">
+          <li class="nav-item"><a class="nav-link link" href="">Про нас</a></li>
+          <li class="nav-item"><a class="nav-link link" href="">Послуги і ціни</a></li>
+          <li class="nav-item"><a class="nav-link link" href="">Майстри</a></li>
+          <li class="nav-item"><a class="nav-link link" href="">Контакти</a></li>
         </ul>
       </nav>
 
-      <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
+      <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
       <button type="button" class="header-btn">Онлайн-запис</button>
     </header>
     <main>
+      <!-- Hero -->
       <section class="hero">
-        <ul class="hero-list">
+        <ul class="hero-list list">
           <li class="hero-item">
-            <a href="" class="hero-link" target="_blank" rel="nofollow noopener noreferrer"
+            <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
               >Instagram</a
             >
           </li>
           <li class="hero-item">
-            <a href="" class="hero-link" target="_blank" rel="nofollow noopener noreferrer"
+            <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
               >Youtube</a
             >
           </li>
         </ul>
-        <p lang="en" class="hero-top-text">A hair s cl alon for men in Kyiv</p>
+        <p lang="en" class="hero-top-text">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
         <p class="hero-bottom-text">
           Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно і зі смаком.
         </p>
       </section>
+
+      <!-- About -->
       <section class="about">
-        <ul class="about-list">
+        <ul class="about-list list">
           <li class="about-item">
             <img class="about-img" src="./img/img1.jpg" alt="Барбер бриє шию" width="270" />
           </li>
@@ -58,7 +62,7 @@
           </li>
         </ul>
         <p class="about-top-text">Про нас</p>
-        <h2 class="about-title">Кращий Барбершоп твого міста</h2>
+        <h2 class="about-title title">Кращий Барбершоп твого міста</h2>
         <p class="about-bottom-text">
           Якщо ти хочеш додати до свого образу більше впевненості – тобі точно до нас.
         </p>
@@ -70,10 +74,12 @@
         </p>
         <button type="button" class="about-btn">Онлайн-запис</button>
       </section>
+
+      <!-- Price -->
       <section class="price">
         <p class="price-top-text">Проведи час в компанії кращих майстрів</p>
-        <h2 class="price-title">Послуги і ціни</h2>
-        <ul class="price-list">
+        <h2 class="price-title title">Послуги і ціни</h2>
+        <ul class="price-list list">
           <li class="price-item">
             <p class="price-text">Чоловіча стрижка</p>
             <p class="price-text-right">від 300 грн.</p>
@@ -88,11 +94,10 @@
           </li>
           <li class="price-item">
             <p class="price-text">Бриття небезпечною бритвою</p>
-            class="price-text-right"
             <p class="price-text-right">від 200 грн.</p>
           </li>
         </ul>
-        <ul>
+        <ul class="price-list list">
           <li class="price-item">
             <p class="price-text">Стрижка у стажера</p>
             <p class="price-text-right">від 50 грн.</p>
@@ -112,35 +117,39 @@
         </ul>
         <button type="button" class="price-btn">Онлайн-запис</button>
       </section>
+
+      <!-- Benefit -->
       <section class="benefit">
-        <ul class="benefit-list">
+        <ul class="benefit-list list">
           <li class="benefit-item">
             <span class="benefit-count">600</span>
             <p class="benefit-text">Задоволених клієнтів в день</p>
           </li>
           <li class="benefit-item">
             <span class="benefit-count">50</span>
-            <p class="benefit-count">Нагород за відмінний сервіс</p>
+            <p class="benefit-text">Нагород за відмінний сервіс</p>
           </li>
           <li class="benefit-item">
             <span class="benefit-count">20</span>
-            <p class="benefit-count">Кращих майстрів Києва</p>
+            <p class="benefit-text">Кращих майстрів Києва</p>
           </li>
           <li class="benefit-item">
             <span class="benefit-count">100</span>
-            <p class="benefit-count">Подарунків постійним клієнтам</p>
+            <p class="benefit-text">Подарунків постійним клієнтам</p>
           </li>
         </ul>
         <p class="benefit-top-text">Стара традиційна школа</p>
-        <h2 class="benefit-title">Чому приходять саме до нас?</h2>
+        <h2 class="benefit-title title">Чому приходять саме до нас?</h2>
         <p class="benefit-bottom-text">
           Про нас говорять тільки хороше. Але краще 1 раз побачити і відчути, ніж 10 разів прочитати
         </p>
       </section>
+
+      <!-- Masters -->
       <section class="masters">
         <p class="masters-top-text">Для справжніх цінителів атмосфери</p>
-        <h2 class="masters-title">Наші майстри</h2>
-        <ul class="masters-list">
+        <h2 class="masters-title title">Наші майстри</h2>
+        <ul class="masters-list list">
           <li class="masters-item">
             <img class="masters-img" src="./img/img11-min.jpg" alt="Барбер" width="370" />
             <h3 lang="en" class="masters-subtitle">John Smith</h3>
@@ -158,10 +167,12 @@
           </li>
         </ul>
       </section>
+
+      <!-- Galery -->
       <section class="galery">
         <p class="galery-top-text">Латинською мовою "барба" означає "борода"</p>
-        <h2 class="galery-title">Галерея</h2>
-        <ul class="galery-list">
+        <h2 class="galery-title visually-hidden">Галерея</h2>
+        <ul class="galery-list list">
           <li class="galery-item">
             <img
               class="galery-img"
@@ -196,16 +207,20 @@
           </li>
         </ul>
       </section>
+
+      <!-- Online -->
       <section class="online">
-        <h2 class="omline-btn">Онлайн-запис</h2>
+        <h2 class="online-btn">Онлайн-запис</h2>
       </section>
+
+      <!-- Contact -->
       <section class="contact">
-        <h2 class="contact-title">Контакти</h2>
+        <h2 class="contact-title title">Контакти</h2>
         <address class="contact-address">
-          <ul class="contact-list">
+          <ul class="contact-list list">
             <li class="contact-item">
               <a
-                class="contact-link"
+                class="contact-link link"
                 href="https://goo.gl/maps/imd39ufVu23EfUoq9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -213,10 +228,12 @@
               >
             </li>
             <li class="contact-item">
-              <a class="contact-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+              <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
             </li>
             <li class="contact-item">
-              <a class="contact-mail" href="mailto:barbershop@email.com">barbershop@email.com</a>
+              <a class="contact-mail link" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
@@ -224,16 +241,18 @@
         <p class="contact-text">Щоденно з 9:00 до 22:00</p>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <p class="footer-text">&copy; Copyright 2020</p>
-      <ul class="footer-list">
+      <ul class="footer-list list">
         <li class="footer-item">
-          <a class="footer-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+          <a class="footer-link link" href="" target="_blank" rel="nofollow noopener noreferrer"
             >Instagram</a
           >
         </li>
         <li class="footer-item">
-          <a class="footer-link" href="" target="_blank" rel="nofollow noopener noreferrer"
+          <a class="footer-link link" href="" target="_blank" rel="nofollow noopener noreferrer"
             >Youtube</a
           >
         </li>

@@ -71,6 +71,8 @@ body {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -78,6 +80,9 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
 }
 
 .btn:hover,
@@ -107,6 +112,23 @@ body {
   background-color: grey;
 }
 
+.header-nav {
+  margin-left: 70px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .nav-link,
 .header-tel {
   font-weight: 600;
@@ -114,15 +136,30 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--secondary-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-btn {
   color: var(--secondary-color);
+  margin-left: 60px;
 }
 
 /* -------Hero------- */
 
 .hero {
+}
+
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 90px;
 }
 
 .hero-link {
@@ -137,6 +174,7 @@ body {
   padding: 272px 96px 206px 96px;
   /* тимчасовий фон */
   background-color: grey;
+  flex-grow: 1;
 }
 
 .hero-top-text {
@@ -165,6 +203,19 @@ body {
 .about {
   padding-top: 140px;
   padding-bottom: 120px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-item + .about-item {
+  margin-left: 30px;
 }
 
 .about-top-text {
@@ -210,13 +261,24 @@ body {
   margin-bottom: 44px;
 }
 
+.price-wrap {
+  display: flex;
+}
+
 .price-list {
   outline: 1px solid white;
   padding: 30px 40px;
+  flex-grow: 1;
 }
 
 .price-item {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item:last-child {
+  margin-bottom: 0;
 }
 
 .price-text,
@@ -241,15 +303,41 @@ body {
   padding-bottom: 140px;
 }
 
+.benefit-container {
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-list {
+  min-width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .benefit-item {
   width: 170px;
   height: 133px;
   background-color: #f7f7f7;
   padding: 20px 24px;
-  outline: 1px solid red;
   display: block;
   text-align: center;
 }
+
+.benefit-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefit-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+/* .benefit-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefit-item:nth-child(even) {
+  margin-top: 30px; */
 
 .benefit-count {
   font-weight: 700;
@@ -293,6 +381,20 @@ body {
   margin-bottom: 44px;
 }
 
+.masters-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+/* .masters-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.masters-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+
 .masters-subtitle {
   font-size: 18px;
   line-height: 1.38;
@@ -317,6 +419,16 @@ body {
 
 .galery-top-text {
   margin-bottom: 44px;
+}
+
+.galery-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.galery-item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
 }
 
 /* -----Online----- */
@@ -346,6 +458,10 @@ body {
   font-style: normal;
 }
 
+.contact-list {
+  width: 370px;
+}
+
 .contact-link,
 .contact-tel,
 .contact-mail {
@@ -373,6 +489,7 @@ body {
 .contact-top-text {
   color: var(--secondary-color);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact-text {
@@ -390,12 +507,26 @@ body {
   padding-bottom: 55px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
 .footer-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--secondary-text-color);
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer-link {

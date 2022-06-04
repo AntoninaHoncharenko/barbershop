@@ -111,6 +111,17 @@ body {
   background-color: grey;
 }
 
+.header-logo {
+  width: 66px;
+  height: 55px;
+  display: flex;
+}
+
+.header-logo:hover,
+.header-logo:focus .header-logo-icon {
+  fill: var(--accent-color);
+}
+
 .header-nav {
   margin-left: 70px;
 }
@@ -531,7 +542,7 @@ body {
 .contact-top-text {
   color: var(--secondary-color);
   margin-bottom: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .contact-text {

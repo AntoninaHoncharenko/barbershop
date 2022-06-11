@@ -39,7 +39,7 @@
         </nav>
         <div class="header-connect">
           <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-          <button type="button" class="header-btn btn">Онлайн-запис</button>
+          <button type="button" data-modal-open class="header-btn btn">Онлайн-запис</button>
         </div>
       </div>
     </header>
@@ -47,18 +47,21 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-links">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a href="" class="hero-link link" target="_blank" rel="nofollow noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-content">
             <p lang="en" class="hero-top-text top-text">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -92,7 +95,7 @@
               з клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
               приходить!
             </p>
-            <button type="button" class="about-btn btn">Онлайн-запис</button>
+            <button type="button" data-modal-open class="about-btn btn">Онлайн-запис</button>
           </div>
         </div>
       </section>
@@ -103,44 +106,44 @@
           <p class="price-top-text top-text">Проведи час в компанії кращих майстрів</p>
           <h2 class="price-title title">Послуги і ціни</h2>
           <div class="price-wrap">
-            <ul class="price-list list">
+            <ul class="price-list price-list-light list">
               <li class="price-item">
                 <p class="price-text">Чоловіча стрижка</p>
-                <p class="price-text-right">від 300 грн.</p>
+                <p class="price-text">від 300 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Стрижка бороди</p>
-                <p class="price-text-right">від 200 грн.</p>
+                <p class="price-text">від 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Стрижка вусів</p>
-                <p class="price-text-right">від 200 грн.</p>
+                <p class="price-text">від 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Бриття небезпечною бритвою</p>
-                <p class="price-text-right">від 200 грн.</p>
+                <p class="price-text">від 200 грн.</p>
               </li>
             </ul>
-            <ul class="price-list list">
+            <ul class="price-list price-list-dark list">
               <li class="price-item">
                 <p class="price-text">Стрижка у стажера</p>
-                <p class="price-text-right">від 50 грн.</p>
+                <p class="price-text">від 50 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Стрижка під насадку</p>
-                <p class="price-text-right">від 200 грн.</p>
+                <p class="price-text">від 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Дитяча стрижка (до 12 років)</p>
-                <p class="price-text-right">від 300 грн.</p>
+                <p class="price-text">від 300 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-text">Камуфлювання сивини</p>
-                <p class="price-text-right">від 200 грн.</p>
+                <p class="price-text">від 200 грн.</p>
               </li>
             </ul>
           </div>
-          <button type="button" class="price-btn btn">Онлайн-запис</button>
+          <button type="button" data-modal-open class="price-btn btn">Онлайн-запис</button>
         </div>
       </section>
 
@@ -324,44 +327,56 @@
         </div>
       </section>
 
-      <!-- Online -->
-      <section class="online">
-        <div class="container">
-          <h2 class="online-title title">Онлайн-запис</h2>
-        </div>
-      </section>
-
       <!-- Contact -->
-      <section class="contact" id="Contact">
+      <div class="contact-wrap">
         <div class="container">
-          <h2 class="contact-title title">Контакти</h2>
-          <address class="contact-address">
-            <ul class="contact-list list">
-              <li class="contact-item">
-                <a
-                  class="contact-link link"
-                  href="https://goo.gl/maps/imd39ufVu23EfUoq9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >вул. Васильківська, 7А Київ, 08132</a
-                >
-              </li>
-              <li class="contact-item">
-                <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-              </li>
-              <li class="contact-item">
-                <a class="contact-mail link" href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <div class="contact-content">
-            <p class="contact-top-text" top-text>Час роботи</p>
-            <p class="contact-text">Щоденно з 9:00 до 22:00</p>
-          </div>
+          <section class="online">
+            <h2 class="online-title title">Онлайн-запис</h2>
+          </section>
+
+          <section class="contact" id="Contact">
+            <h2 class="contact-title title">Контакти</h2>
+            <address class="contact-address">
+              <ul class="contact-list list">
+                <li class="contact-item">
+                  <a
+                    class="contact-link link"
+                    href="https://goo.gl/maps/imd39ufVu23EfUoq9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg class="contact-icon" width="24" height="24">
+                      <use href="./img/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    вул. Васильківська, 7А <br />
+                    Київ, 08132</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <a class="contact-tel link" href="tel:+380441111111">
+                    <svg class="contact-icon" width="24" height="24">
+                      <use href="./img/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <a class="contact-mail link" href="mailto:barbershop@email.com">
+                    <svg class="contact-icon" width="24" height="24">
+                      <use href="./img/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="contact-content">
+              <p class="contact-top-text" top-text>Час роботи</p>
+              <p class="contact-text">Щоденно з 9:00 до 22:00</p>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -382,5 +397,13 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close-btn">X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

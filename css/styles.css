@@ -43,11 +43,6 @@ body {
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
 .top-text {
   font-weight: 600;
   font-size: 11px;
@@ -94,11 +89,6 @@ body {
   border-radius: 25px;
 }
 
-.btn:hover,
-.btn:focus {
-  color: var(--accent-color);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -131,6 +121,7 @@ body {
 
 .header-logo-icon {
   fill: var(--main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo:hover .header-logo-icon,
@@ -164,6 +155,14 @@ body {
   color: var(--secondary-color);
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
 }
 
 .header-connect {
@@ -173,6 +172,12 @@ body {
 .header-btn {
   color: var(--secondary-color);
   margin-left: 60px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--accent-color);
 }
 
 /* -------Hero------- */
@@ -217,10 +222,16 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
 }
 
 .hero-content {
-  max-width: 1073px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 272px 96px 206px 96px;
   background-color: grey;
@@ -296,6 +307,14 @@ body {
 
 .about-btn {
   color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 /* -------Price------- */
@@ -375,6 +394,12 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.price-btn:hover,
+.price-btn:focus {
+  background-color: var(--accent-color);
 }
 
 /* ------Benefit------ */
@@ -524,6 +549,7 @@ body {
 
 .masters-soc-icon {
   fill: var(--main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-soc-link:hover .masters-soc-icon,
@@ -605,6 +631,16 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-tel:hover,
+.contact-mail:hover,
+.contact-link:focus,
+.contact-tel:focus,
+.contact-mail:focus {
+  color: var(--accent-color);
 }
 
 .contact-link {
@@ -681,6 +717,7 @@ body {
 .footer-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .footer-item:not(:last-child) {
@@ -692,6 +729,14 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--main-color);
+}
+
+.footer-list::before {
+  content: '';
+  background-color: var(--main-color);
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
 }
 
 /* -----Modal------- */

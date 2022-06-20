@@ -332,6 +332,26 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Онлайн-запис</h2>
+            <form class="online-form">
+              <div class="input-field">
+                <input type="text" name="name" id="name" class="online-input" placeholder=" " />
+                <label for="name" class="online-label">Ім'я*</label>
+              </div>
+              <div class="input-field">
+                <input type="tel" name="tel" id="tel" class="online-input" placeholder=" " />
+                <label for="tel" class="online-label">Телефон*</label>
+              </div>
+              <div class="text-field">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder=" "
+                  class="online-textarea"
+                ></textarea>
+                <label for="message" class="online-label">Повідомлення</label>
+              </div>
+              <button type="button" data-modal-open class="online-btn btn">Відправити</button>
+            </form>
           </section>
 
           <section class="contact" id="Contact">
@@ -398,6 +418,7 @@
       </div>
     </footer>
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close-btn">X</button>

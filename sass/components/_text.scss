@@ -1,0 +1,31 @@
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.top-text--dark {
+  color: var(--main-color);
+}
+
+.top-text--light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.top-text::before {
+  content: '';
+  height: 1px;
+  width: 63px;
+  background-color: currentColor;
+  margin-right: 21px;
+}
+
+.bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}

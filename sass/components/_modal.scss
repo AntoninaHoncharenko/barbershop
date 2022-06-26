@@ -17,10 +17,10 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 300ms;
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .modal-close-btn {

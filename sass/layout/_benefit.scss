@@ -1,11 +1,11 @@
 .benefit {
   padding-top: 140px;
   padding-bottom: 140px;
-}
 
-.benefit__container {
-  display: flex;
-  justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .benefit__list {
@@ -22,14 +22,14 @@
   padding: 20px 24px;
   display: block;
   text-align: center;
-}
 
-.benefit__item:nth-child(odd) {
-  margin-right: 30px;
-}
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
 
-.benefit__item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .benefit__count {
@@ -38,16 +38,16 @@
   line-height: 1.35;
   letter-spacing: 0.05em;
   margin-bottom: 6px;
-}
 
-.benefit__count::after {
-  content: '+';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.37;
-  text-align: center;
-  color: var(--accent-color);
-  vertical-align: top;
+  &::after {
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    text-align: center;
+    color: var(--accent-color);
+    vertical-align: top;
+  }
 }
 
 .benefit__text {

@@ -1,13 +1,13 @@
 @import './utils/vars.scss';
-@import './utils/reset.scss';
+@import './base/reset';
 
-@import './components/body';
+@import './base/body';
 @import './components/container';
 @import './components/img.scss';
 @import './components/text';
 @import './components/title';
 @import './components/btn';
-@import './components/visually-hidden';
+@import './utils/visually-hidden';
 
 @import './layout/header';
 @import './layout/hero';
@@ -16,6 +16,7 @@
 @import './layout/benefit';
 @import './layout/masters';
 @import './layout/galery';
+@import './layout/online-form';
 @import './layout/contact';
 @import './layout/footer';
 @import './components/modal';

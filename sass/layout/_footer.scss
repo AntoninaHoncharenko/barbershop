@@ -21,6 +21,14 @@
   display: flex;
   margin-left: auto;
   align-items: center;
+
+  &::before {
+    content: '';
+    background-color: var(--main-color);
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+  }
 }
 
 .footer__item:not(:last-child) {
@@ -32,12 +40,4 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--main-color);
-}
-
-.footer__list::before {
-  content: '';
-  background-color: var(--main-color);
-  width: 60px;
-  height: 1px;
-  margin-right: 40px;
 }

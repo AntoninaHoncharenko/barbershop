@@ -1,9 +1,10 @@
-@import './utils/vars.scss';
+@import './utils/variables';
 @import './base/reset';
 
 @import './base/body';
 @import './components/container';
 @import './components/img.scss';
+@import './utils/mixin';
 @import './components/text';
 @import './components/title';
 @import './components/btn';

@@ -51,6 +51,7 @@
 }
 
 .benefit__text {
+  @include font(600, 11px, 1.36, null);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

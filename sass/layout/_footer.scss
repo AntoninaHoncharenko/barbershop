@@ -10,10 +10,7 @@
 }
 
 .footer__text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
+  @include font(600, 11px, 1.36, 0.02em);
   color: var(--secondary-text-color);
 }
 
@@ -36,8 +33,6 @@
 }
 
 .footer__link {
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
+  @include font(null, 11px, 1.36, 0.02em);
   color: var(--main-color);
 }

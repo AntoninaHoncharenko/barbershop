@@ -56,9 +56,7 @@
 
 .price__text,
 .price__text-right {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(null, 18px, 1.67, 0.02em);
   color: var(--secondary-text-color);
 }
 

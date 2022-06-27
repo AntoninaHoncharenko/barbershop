@@ -30,9 +30,7 @@
 }
 
 .about-content__text {
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
+  @include font(null, 14px, 1.86, 0.02em);
   color: var(--text-color);
   margin-bottom: 40px;
 }

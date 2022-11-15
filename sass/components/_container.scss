@@ -1,6 +1,16 @@
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 480px;
+  padding: 0 30px;
+
+  @include tablet {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    width: 1280px;
+    padding: 0 55px;
+  }
 }

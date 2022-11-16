@@ -1,14 +1,4 @@
 .about {
-  padding: 84px 0px;
-
-  @include tablet {
-  }
-
-  @include desktop {
-    padding-top: 140px;
-    padding-bottom: 120px;
-  }
-
   .container {
     display: flex;
   }
@@ -51,7 +41,10 @@
 }
 
 .about-content__title {
-  width: 380px;
+  @media screen and (max-width: 767px) {
+    width: 380px;
+  }
+
   font-size: 28px;
   margin-bottom: 20px;
 

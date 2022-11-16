@@ -1,10 +1,4 @@
 .benefit {
-  padding: 84px 0px;
-
-  @include desktop {
-    padding: 140px 0px;
-  }
-
   &__container {
     @include desktop {
       display: flex;

@@ -1,14 +1,5 @@
 .masters {
   background-color: #f7f7f7;
-  padding: 84px 0;
-
-  @include tablet {
-    padding: 100px 0;
-  }
-
-  @include desktop {
-    padding: 130px 0;
-  }
 }
 
 .masters__top-text {

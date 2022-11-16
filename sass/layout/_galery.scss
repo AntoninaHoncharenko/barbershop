@@ -1,6 +1,13 @@
 .galery {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 84px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include desktop {
+    padding: 130px 0;
+  }
 }
 
 .galery__top-text {
@@ -8,11 +15,36 @@
 }
 
 .galery__list {
-  display: flex;
-  margin-right: -30px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 
 .galery__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
 }

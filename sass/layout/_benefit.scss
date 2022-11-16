@@ -1,10 +1,24 @@
 .benefit {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding: 84px 0px;
+
+  @include desktop {
+    padding: 140px 0px;
+  }
 
   &__container {
-    display: flex;
-    justify-content: center;
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+}
+
+.benefit__content {
+  margin-bottom: 44px;
+
+  @include tablet {
+    width: 500px;
   }
 }
 
@@ -13,15 +27,34 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include tablet {
+    width: 450px;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    width: 450px;
+    margin-left: 0;
+    margin-right: 130px;
+  }
 }
 
 .benefit__item {
-  width: 170px;
+  width: 193px;
   height: 133px;
   background-color: #f7f7f7;
   padding: 20px 24px;
   display: block;
   text-align: center;
+
+  @include tablet {
+    width: 210px;
+  }
+
+  @include desktop {
+    width: 170px;
+  }
 
   &:nth-child(odd) {
     margin-right: 30px;
@@ -55,6 +88,8 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  max-width: 130px;
+  margin: 0 auto;
 }
 
 .benefit__top-text {
@@ -63,6 +98,7 @@
 
 .benefit__title {
   margin-bottom: 20px;
+  width: 420px;
 }
 
 .benefit__bottom-text {

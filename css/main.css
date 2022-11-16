@@ -1058,8 +1058,12 @@ body {
 
 .footer {
   background-color: #f7f7f7;
-  padding-top: 57px;
-  padding-bottom: 55px;
+  padding: 44px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 55px 0;
+  }
 }
 
 .footer__container {

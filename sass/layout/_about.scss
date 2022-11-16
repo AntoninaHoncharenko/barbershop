@@ -1,6 +1,13 @@
 .about {
-  padding-top: 140px;
-  padding-bottom: 120px;
+  padding: 84px 0px;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
 
   .container {
     display: flex;
@@ -8,17 +15,35 @@
 }
 
 .about__list {
-  display: flex;
-  margin-right: 64px;
+  display: none;
+  @include tablet {
+    display: block;
+    margin-right: 30px;
+  }
+
+  @include desktop {
+    display: flex;
+    margin-right: 64px;
+  }
 }
 
 .about__item {
-  width: 270px;
-  height: 445px;
+  width: 330px;
+  height: 235px;
+
+  @include desktop {
+    width: 270px;
+    height: 445px;
+  }
 }
 
 .about__item + .about__item {
-  margin-left: 30px;
+  margin-left: 0;
+  margin-top: 30px;
+  @include desktop {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
 }
 
 .about-content__top-text {
@@ -26,6 +51,7 @@
 }
 
 .about-content__title {
+  // max-width: 380px;
   margin-bottom: 20px;
 }
 
@@ -38,6 +64,10 @@
   @include font(null, 14px, 1.86, 0.02em);
   color: var(--text-color);
   margin-bottom: 40px;
+
+  @include desktop {
+    width: 450px;
+  }
 }
 
 .about-content__btn-link {

@@ -78,14 +78,36 @@
       </section>
 
       <!-- About -->
-      <!-- <section class="about" id="About">
+      <section class="about" id="About">
         <div class="container">
           <ul class="about__list list">
             <li class="about__item">
-              <img class="about__img" src="./img/img1.jpg" alt="Барбер бриє шию" width="270" />
+              <picture>
+                <source
+                  srcset="./img/about1-desk-1px.jpg 1x, ./img/about1-desk-2px.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./img/about1-tab-1px.jpg 1x, ./img/about1-tab-2px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img class="about__img" src="./img/about1-desk-1px.jpg" alt="Барбер бриє шию" />
+              </picture>
             </li>
             <li class="about__item">
-              <img class="about__img" src="./img/img2.jpg" alt="Барбер стриже" width="270" />
+              <picture>
+                <source
+                  srcset="./img/about2-desk-1px.jpg 1x, ./img/about2-desk-2px.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./img/about2-tab-1px.jpg 1x, ./img/about2-tab-2px.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <img class="about__img" src="./img/about2-desk-1px.jpg" alt="Барбер бриє шию" />
+              </picture>
             </li>
           </ul>
           <div class="about-content">
@@ -103,7 +125,7 @@
             <a href="#online" class="link link-btn about-content__btn-link">Онлайн-запис</a>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Price -->
       <!-- <section class="price" id="Price">

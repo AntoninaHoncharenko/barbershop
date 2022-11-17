@@ -1,37 +1,45 @@
 .contact-wrap {
   background-color: #191c26;
-  background-size: calc(50% - 15px);
-
-  // min-width: 1280px;
-  margin: 0 auto;
-
-  .container {
-    @include desktop {
-      display: flex;
-    }
-  }
-}
-
-.contact {
-  padding-left: 100px;
-  width: calc(50% - 15px);
-
-  background-image: url(../img/contact-mob-1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../img/contact-mob-2x.png);
-  }
-
-  @include tablet {
-    background-image: url(../img/contact-tab-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../img/contact-tab-2x.png);
-    }
-  }
 
   @include desktop {
     background-image: url(../img/contact-desk-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../img/contact-desk-2x.png);
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-size: calc(50% - 15px);
+  }
+}
+
+.contact-container {
+  @include desktop {
+    display: flex;
+    width: 1280px;
+    padding: 0 55px;
+    margin: 0 auto;
+  }
+}
+
+.contact {
+  @include desktop {
+    padding-left: 100px;
+    // width: calc(50% - 15px);
+    width: 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/contact-mob-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contact-mob-2x.png);
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    background-image: url(../img/contact-tab-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contact-tab-2x.png);
     }
   }
 
@@ -42,14 +50,29 @@
 
 .contact__title {
   margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.cont-wrap {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+  }
 }
 
 .contact-address {
   font-style: normal;
-}
-
-.address__list {
-  width: 370px;
+  margin-bottom: 70px;
+  @include tablet {
+    width: 280px;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+  @include desktop {
+    margin-bottom: 70px;
+  }
 }
 
 .address__link,
@@ -78,7 +101,6 @@
 }
 
 .address__mail {
-  margin-bottom: 70px;
   display: flex;
   align-items: center;
 }

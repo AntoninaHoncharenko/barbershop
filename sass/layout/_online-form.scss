@@ -1,7 +1,25 @@
 .online {
+  // padding-left: 30px;
+  // padding-right: 30px;
   @include desktop {
     padding-right: 40px;
-    width: calc(50% + 15px);
+    // width: calc(50% + 15px);
+    width: 50%;
+  }
+}
+
+.container-wrap {
+  // width: 100%;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    width: 480px;
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin: 0 auto;
+    width: 768px;
+    padding: 0 40px;
   }
 }
 
@@ -35,10 +53,17 @@
   }
 
   @include desktop {
-    width: 270px;
+    width: 260px;
   }
 
   position: relative;
+
+  &:hover .online-form__input {
+    border-color: var(--secondary-color);
+  }
+  &:hover .online-form__label {
+    color: var(--secondary-color);
+  }
 }
 
 .online-form__input {
@@ -84,6 +109,14 @@
   width: 100%;
   position: relative;
   margin-top: 44px;
+
+  &:hover .online-form__textarea {
+    border-color: var(--secondary-color);
+  }
+
+  &:hover .online-form__label {
+    color: var(--secondary-color);
+  }
 }
 
 .online-form__textarea {

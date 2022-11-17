@@ -1,22 +1,43 @@
 .contact-wrap {
   background-color: #191c26;
-  background-image: url(../img/Bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
   background-size: calc(50% - 15px);
-  min-width: 1280px;
+
+  // min-width: 1280px;
   margin: 0 auto;
 
   .container {
-    display: flex;
+    @include desktop {
+      display: flex;
+    }
   }
 }
 
 .contact {
-  padding-top: 130px;
-  padding-bottom: 130px;
   padding-left: 100px;
   width: calc(50% - 15px);
+
+  background-image: url(../img/contact-mob-1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/contact-mob-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../img/contact-tab-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contact-tab-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../img/contact-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contact-desk-2x.png);
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact__title {

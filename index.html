@@ -39,29 +39,31 @@
 
           <!-- mob-menu -->
           <div class="backdrop is-hidden">
-            <div class="menu-container">
-              <button type="button" class="menu-close-btn">
+            <div class="menu-container is-open">
+              <button type="button" class="menu-close-btn js-close">
                 <svg class="menu-close-icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>
               <ul class="mob__nav-list list">
-                <li class="mob__nav-item">
+                <li class="mob__nav-item js-close">
                   <a class="mob-nav-link link" href="#About">Про нас</a>
                 </li>
-                <li class="mob__nav-item">
+                <li class="mob__nav-item js-close">
                   <a class="mob-nav-link link" href="#Price">Послуги і ціни</a>
                 </li>
-                <li class="mob__nav-item">
+                <li class="mob__nav-item js-close">
                   <a class="mob-nav-link link" href="#Masters">Майстри</a>
                 </li>
-                <li class="mob__nav-item">
+                <li class="mob__nav-item js-close">
                   <a class="mob-nav-link link" href="#Contact">Контакти</a>
                 </li>
               </ul>
               <div class="mob-connect">
                 <a href="tel:+380441111111" class="mob__connect-tel link">+38 044 111 11 11</a>
-                <a href="#online" class="link link-btn mob__connect-btn-link">Онлайн-запис</a>
+                <a href="#online" class="link link-btn mob__connect-btn-link js-close"
+                  >Онлайн-запис</a
+                >
               </div>
               <div class="soc-wrap">
                 <span class="soc-span"></span>
@@ -620,5 +622,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./scripts/mob-menu.js"></script>
   </body>
 </html>

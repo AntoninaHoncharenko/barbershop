@@ -44,15 +44,13 @@
 
 .online-form__field {
   width: 100%;
-
-  @media screen and (max-width: 767px) {
-    &:first-child {
-      margin-bottom: 44px;
-    }
+  &:first-child {
+    margin-bottom: 44px;
   }
 
   @include tablet {
     width: 330px;
+    margin-bottom: 0;
   }
 
   @include desktop {

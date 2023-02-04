@@ -1148,14 +1148,13 @@ body {
   width: 100%;
   position: relative;
 }
-@media screen and (max-width: 767px) {
-  .online-form__field:first-child {
-    margin-bottom: 44px;
-  }
+.online-form__field:first-child {
+  margin-bottom: 44px;
 }
 @media screen and (min-width: 768px) {
   .online-form__field {
     width: 330px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {

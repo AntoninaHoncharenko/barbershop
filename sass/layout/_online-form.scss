@@ -44,9 +44,13 @@
 
 .online-form__field {
   width: 100%;
+  margin-bottom: 44px;
+
   &:first-child {
     margin-bottom: 44px;
   }
+
+  position: relative;
 
   @include tablet {
     width: 330px;
@@ -56,8 +60,6 @@
   @include desktop {
     width: 260px;
   }
-
-  position: relative;
 
   &:hover .online-form__input {
     border-color: var(--secondary-color);

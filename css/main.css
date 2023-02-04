@@ -1146,10 +1146,8 @@ body {
 
 .online-form__field {
   width: 100%;
-  position: relative;
-}
-.online-form__field:first-child {
   margin-bottom: 44px;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .online-form__field {

@@ -49,7 +49,7 @@
 
   &:first-child {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-    padding: 30px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
 
     @include tablet {
       padding: 30px 40px 20px 40px;
@@ -61,7 +61,7 @@
   }
 
   &:last-child {
-    padding: 0px 30px 30px 30px;
+    padding: 0px 20px 20px 20px;
 
     @include tablet {
       padding: 0px 40px 30px 40px;
@@ -96,6 +96,10 @@
 .price__text,
 .price__text-right {
   @include font(null, 14px, 1.67, 0.02em);
+
+  @media screen and (max-width: 767px) {
+    max-width: 144px;
+  }
 
   @include tablet {
     font-size: 18px;

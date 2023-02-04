@@ -39,6 +39,10 @@
 }
 
 .card-list__item {
+  @media screen and (max-width: 767px) {
+    width: 300px;
+  }
+
   @media screen and (max-width: 1279px) {
     &:not(:last-child) {
       margin-bottom: 64px;
@@ -97,5 +101,11 @@
   .socials__link:hover &,
   .socials__link:focus & {
     fill: var(--accent-color);
+  }
+}
+
+.mob-image {
+  @media screen and (max-width: 767px) {
+    width: 300px;
   }
 }

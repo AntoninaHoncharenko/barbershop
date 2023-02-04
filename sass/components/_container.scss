@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  width: 480px;
-  padding: 0 30px;
+  width: 340px;
+  padding: 0 20px;
 
   @include tablet {
     width: 768px;
@@ -16,7 +16,7 @@
 }
 
 .section {
-  padding: 84px 0;
+  padding: 60px 0;
 
   @include tablet {
     padding: 100px 0;

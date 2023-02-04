@@ -17,7 +17,7 @@
 }
 
 .benefit__list {
-  min-width: 370px;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,27 +35,36 @@
 }
 
 .benefit__item {
-  width: 193px;
-  height: 133px;
+  width: 140px;
+  height: 110px;
   background-color: #f7f7f7;
-  padding: 20px 24px;
+  padding: 10px;
   display: block;
   text-align: center;
+  &:nth-child(odd) {
+    margin-right: 15px;
+  }
+
+  &:nth-child(even) {
+    margin-top: 15px;
+  }
 
   @include tablet {
     width: 210px;
+    height: 133px;
+    padding: 20px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(even) {
+      margin-top: 30px;
+    }
   }
 
   @include desktop {
     width: 170px;
-  }
-
-  &:nth-child(odd) {
-    margin-right: 30px;
-  }
-
-  &:nth-child(even) {
-    margin-top: 30px;
   }
 }
 
@@ -92,7 +101,7 @@
 
 .benefit__title {
   margin-bottom: 20px;
-  width: 420px;
+  width: 300px;
 }
 
 .benefit__bottom-text {
